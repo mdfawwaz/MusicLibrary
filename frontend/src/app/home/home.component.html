@@ -1,0 +1,12 @@
+<div class="row g-4">
+  <div *ngFor="let album of albums" class="col-md-4">
+    <div class="card">
+      <img src="/assets/images/loverAlbumcover.jfif" class="card-img-top" alt="Album img">
+      <div class="card-body">
+        <h5 class="card-title">Album Title </h5>
+        <p class="card-text">Artist Name  </p>
+        <button class="btn btn-primary" (click)="onAlbumClick(album.id)">View Details</button>
+      </div>
+    </div>
+  </div>
+</div>

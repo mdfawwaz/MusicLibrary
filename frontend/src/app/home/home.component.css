@@ -1,0 +1,11 @@
+.card {
+  width: 14rem;
+  height: 14rem;
+  margin-bottom: 120px; /*row spacing*/
+}
+.card img.card-img-top {
+  max-width: 100%; /* This makes sure the image doesn't overflow its container */
+  height: auto; /* Maintains the aspect ratio */
+
+}
+

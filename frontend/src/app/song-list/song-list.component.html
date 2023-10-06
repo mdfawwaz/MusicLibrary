@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+  <title>Document</title>
+
+</head>
+
+<body>
+
+<div class="album-details">
+
+  <div class="album-info">
+
+    <img src="/assets/images/loverAlbumcover.jfif" alt="Album Cover" class="album-cover">
+
+    <h1 class="album-name">Album Name</h1>
+
+    <p class="album-artist">Artist Name</p>
+
+  </div>
+
+  <div class="tracklist">
+
+    <h2 class="tracklist-heading">Tracklist</h2>
+
+    <table class="tracklist-table">
+
+      <thead>
+
+        <tr>
+
+          <th>#</th>
+
+          <th>Song Name</th>
+
+          <th>Artist</th>
+
+          <th>Like</th>
+
+          <th>Play/Pause</th>
+
+          <th>Add to Playlist</th>
+
+        </tr>
+
+      </thead>
+
+      <tbody>
+
+        <tr *ngFor="let song of songs" class="tracklist-item">
+
+          <td>{{ song.track_number }}</td>
+
+          <td>{{ song.name }}</td>
+
+          <td>{{ song.artist }}</td>
+
+          <!-- Inside your table row -->
+
+          <td>
+
+            <button class="like-button" (click)="toggleLike(song)">
+
+              <i [ngClass]="{'fas fa-heart': song.isLiked, 'far fa-heart': !song.isLiked, 'liked': song.isLiked}"
+                (click)="toggleLike(song)"></i>
+
+            </button>
+            <button class="like-button" (click)="toggleLike(song)">
+
+              <i [ngClass]="{'fas fa-heart': song.isLiked, 'fas fa-heart ': song.isLiked}"
+                (click)="toggleLike(song)"></i>
+
+            </button>
+
+          </td>
+
+
+
+          <td>
+
+            <div class="play-controls">
+
+              <button (click)="togglePlayPause(song)">
+
+                <i [ngClass]="song.isPlaying ? 'fas fa-pause' : 'fas fa-play'"></i>
+
+              </button>
+
+            </div>
+
+          </td>
+
+          <td>
+            <button class="playlist-button" (click)="addToPlaylist(song)">
+                <i class="fas fa-plus"></i>
+            </button>
+          </td>
+
+        </tr>
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+</div>
+
+
+
+<!-- Playing Bar
+
+  <div class="playing-bar">
+
+    <div class="current-song">
+
+      <span class="song-name">Current Song Name</span>
+
+      <span class="artist-name">Current Artist Name</span>
+
+    </div>
+
+    <div class="play-controls">
+
+      <button (click)="togglePlayPause(songs)">
+
+        <i [ngClass]="isPlaying ? 'fas fa-pause' : 'fas fa-play'"></i>
+
+      </button>
+
+    </div>
+
+  </div>
+
+-->
+<!-- </body>
+</html> -->

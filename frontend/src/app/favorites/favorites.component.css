@@ -1,0 +1,372 @@
+body {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  height: 100vh;
+
+  margin: 0;
+
+  background-color: #f0f0f0;
+
+}
+
+
+
+.album-details {
+
+  display: flex;
+
+  background-color: #000130;
+
+  color: #fff;
+
+  padding: 20px;
+
+  border-radius: 8px;
+
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+
+  transition: background-color 0.3s, box-shadow 0.3s;
+
+}
+
+
+
+.album-details:hover {
+
+  background-color: #333;
+
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+
+}
+
+
+
+.album-info {
+
+  flex: 1;
+
+  text-align: center;
+
+  padding: 20px;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  border-radius: 8px;
+
+  backdrop-filter: blur(8px);
+
+}
+
+/* Add this class to style the active button */
+
+.active-button {
+
+  background-color: red;
+
+  /* Add any other styles you want for the active button */
+
+}
+
+
+
+
+
+.album-cover {
+
+  max-width: 300px;
+
+  height: auto;
+
+  border-radius: 8px;
+
+  box-shadow: 0px 0px 10px rgb(65, 0, 90);
+
+}
+
+
+
+.album-name {
+
+  font-size: 28px;
+
+  margin-top: 10px;
+
+}
+
+
+
+.album-artist {
+
+  font-size: 20px;
+
+  color: #ccc;
+
+}
+
+
+
+.tracklist {
+
+  flex: 2;
+
+  background-color: #290030;
+
+  padding: 20px;
+
+  border-radius: 8px;
+
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+
+  transition: background-color 0.3s, box-shadow 0.3s;
+
+}
+
+
+
+.tracklist:hover {
+
+  background-color: #333;
+
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+
+}
+
+
+
+.tracklist-heading {
+
+  font-size: 24px;
+
+  margin-bottom: 20px;
+
+  color: #fff;
+
+}
+
+
+
+.tracklist-table {
+
+  width: 100%;
+
+  border-collapse: collapse;
+
+}
+
+
+
+.tracklist-table th,
+
+.tracklist-table td {
+
+  padding: 10px;
+
+  text-align: left;
+
+  border-bottom: 1px solid #444;
+
+}
+
+
+
+.tracklist-table th {
+
+  background-color: #333;
+
+  color: #fff;
+
+}
+
+
+
+.tracklist-item:hover {
+
+  background-color: #333;
+
+}
+
+
+
+.track-duration {
+
+  font-size: 16px;
+
+  width: 60px;
+
+  text-align: right;
+
+  color: #888;
+
+}
+
+
+
+.like-button {
+
+  background: none;
+
+  border: none;
+
+  cursor: pointer;
+
+  color: #888;
+
+  font-size: 18px;
+
+  padding: 0;
+
+}
+
+
+
+.like-button:hover {
+
+  color: #ff3f3f;
+
+}
+
+
+
+.play-pause-icon {
+
+  width: 30px;
+
+  height: 30px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  background-color: #3498db;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  transition: background-color 0.3s;
+
+}
+
+
+
+.play-pause-icon i {
+
+  color: #fff;
+
+  font-size: 18px;
+
+}
+
+
+
+.play-pause-icon:hover {
+
+  background-color: #ff5722;
+
+}
+
+
+
+
+
+
+
+
+
+/* Add this CSS for styling the playing bar */
+
+.playing-bar {
+
+  position: fixed;
+
+  bottom: 0;
+
+  left: 0;
+
+  right: 0;
+
+  background-color: #1e1e1e;
+
+  color: #fff;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  padding: 10px;
+
+  align-items: center;
+
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+
+
+.current-song {
+
+  flex: 2;
+
+}
+
+
+
+.play-controls {
+
+  flex: 1;
+
+  display: flex;
+
+  justify-content: flex-end;
+
+}
+
+
+
+.play-controls button {
+
+  background: none;
+
+  border: none;
+
+  cursor: pointer;
+
+  color: #fff;
+
+  font-size: 24px;
+
+  padding: 0;
+
+}
+
+/* Add this CSS to define the red heart color when liked */
+
+.red {
+
+  color: red; /* Change the color to red or your desired color */
+
+}
+
+
+
+/* Add a hover effect for tracklist-item */
+
+.tracklist-item:hover {
+
+  background-color: #3da55c98; /* Change to your desired hover background color */
+
+  cursor: pointer;
+
+}
+
+
+
+
+

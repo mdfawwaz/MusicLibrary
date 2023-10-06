@@ -1,0 +1,16 @@
+.search {
+  margin-bottom: 20px;
+}
+
+.search input {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.search button {
+  padding: 5px 10px;
+}
+
+.search-results {
+  margin-top: 20px;
+}

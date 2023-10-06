@@ -1,0 +1,133 @@
+
+.sidebar {
+  width: 280px;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-right: 1px solid #dee2e6;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #343a40;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.sidebar-icon {
+  margin-right: 10px;
+}
+
+.sidebar-title {
+  flex-grow: 1;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #343a40;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link.active {
+  color: #007bff;
+}
+
+.nav-link:hover {
+  background-color: #e2e6ea;
+}
+
+.btn-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  text-align: left;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-toggle:focus {
+  outline: none;
+}
+
+.btn-toggle.collapsed:before {
+  content: '\e146'; /* Unicode for 'plus' icon */
+}
+
+.btn-toggle:not(.collapsed):before {
+  content: '\e145'; /* Unicode for 'minus' icon */
+}
+
+.collapse {
+  transition: height 0.3s ease;
+}
+
+.show {
+  display: block;
+  height: auto;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,.175);
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: #007bff;
+}
+
+.dropdown-divider {
+  height: 0;
+  margin: 0.5rem 0;
+  overflow: hidden;
+  border-top: 1px solid #e9ecef;
+}
+
+.dropdown-item-text {
+  display: block;
+  padding: 0.25rem 1.5rem;
+  color: #212529;
+}
